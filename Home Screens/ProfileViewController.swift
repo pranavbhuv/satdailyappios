@@ -43,38 +43,8 @@ class ProfileViewController: UIViewController {
     }
     
     func scorepredict() -> String {
-        let qans = UserDefaults.standard.string(forKey: "qans")!
-        let iqans = UserDefaults.standard.string(forKey: "iqans")!
-        let accur = (Double(qans)!)/(Double(iqans)! + Double(qans)!) * 100
-        var predict = "1100"
         
-        if accur <= 20 {
-            predict = "1100 - 1150"
-        }
-        else if accur <= 30 {
-            predict = "1150 - 1200"
-        }
-        else if accur <= 40 {
-            predict = "1200 - 1250"
-        }
-        else if accur <= 50 {
-            predict = "1250 - 1300"
-        }
-        else if accur <= 60 {
-            predict = "1300 - 1350"
-        }
-        else if accur <= 70 {
-            predict = "1350 - 1400"
-        }
-        else if accur <= 80 {
-            predict = "1400 - 1450"
-        }
-        else if accur <= 90 {
-            predict = "1450 - 1500"
-        }
-        else if accur <= 100 {
-            predict = "1500 - 1550"
-        }
+        // Redacted 
         return predict
     }
 }
